@@ -1,20 +1,19 @@
 what,where,proof
-STARTING_DOSE_UNAVAILABLE,United States;Turkey;Slovakia,"2MG (starting dose) ships 150-158 days after other doses; patients cannot begin titration without 2MG"
-APPROVAL_TARGET_NOT_ACTUAL,United States;Turkey;Slovakia,"Target approval dates (Mar 03/Mar 20/Mar 12) all passed with no actual approval recorded as of Apr 25"
-SHIPMENT_BEFORE_APPROVAL,Germany;Poland;Czechia,"MTS countries with expected ship dates (Jun 28/Aug 20/Apr 02) before target approval (Aug 17/Nov 18/Jun 26); MTS has no bonded warehouse"
-DEMAND_LOADED_TOO_LATE,Germany;Brazil;Poland,"Demand loaded Apr 10-12 but site lead times (Ashford 16wk/Calderon 26wk) push real earliest past claimed ship dates by 18-49 days"
-DEMAND_NEVER_LOADED,Finland;Norway,"Direct supply route but Demand Loaded In Planning System is blank; Calderon needs 26wk; if loaded today earliest ship is Oct 24"
-BLANK_TREATED_AS_PASS,Finland;Norway,"Direct route countries with Product Code Set Up At Plant and Demand Loaded both blank; dashboard treats silence as yes"
-SETUP_DATE_AFTER_SHIPMENT,Turkey;Spain;Croatia,"Plant Setup Date (Sep 18/Feb 05/Feb 10) falls after Expected Launch Shipment Date for earliest SKUs"
-PLANT_CAPACITY_EXCEEDED,Ashford,"Unshipped Ashford demand=4.54M vs annual capacity 5.02M; Germany(2.4M)+Brazil(0.9M) overlap Apr-Aug production window far exceeding monthly ~418K"
-ROLLUP_ANY_NOT_ALL,Turkey;United States;Slovakia,"Dashboard shows GREEN because 12MG/4MG/8MG have future ship dates but starting dose 2MG ships 150+ days later"
-DATE_MOVED_WITHOUT_RECORD,Japan;Korea,"Ship dates move ~45 days every month across all 4 extracts (Jan-Apr) with zero Shipment Date Change Log entries"
-COUNTRY_NAME_WHITESPACE,Korea,"Korea has trailing space in Tracker_2026_02 and Tracker_2026_03; splits into separate entity when grouped"
-DATE_STORED_AS_NUMBER,Expected Launch Shipment Date,"Entire column in Tracker_2026_03 stored as Excel serial numbers (e.g. 46485) instead of dates"
-STATUS_VALUE_DRIFT,Finland,"Launch Status varies: 'active ' (Feb) 'ACTIVE' (Mar) 'ACTIVE ' (Apr) instead of standard 'Active'"
-STATUS_INVALID_ENTRY,Ireland,"VLR-2MG-1VIAL row has Launch Status='Invalid Entry' in Apr tracker; likely why dashboard shows Ireland as only RED"
-DUPLICATE_ROW,Slovakia,"VLR-4MG-1VIAL appears twice in Tracker_2026_03 with different ship dates (46364 vs 46371); 3 rows in all other months"
-SKU_NOT_IN_REFERENCE,Norway,"VLR-16MG-4PEN appears in all 4 tracker months but is not listed in Ref_SKUs (valid doses are 2/4/8/12MG)"
-APPROVAL_BEFORE_SUBMISSION,Peru;Mexico,"National pathway but Actual Approval (Aug 03/Sep 06) precedes Actual Submission (Aug 24/Oct 15); impossible for independent assessment"
-FLAG_YES_BUT_NO_DATE,Malaysia;Vietnam;United States,"Product Code Set Up At Warehouse=Yes but Warehouse Setup Date is blank for all SKUs in these Direct-route markets"
-PLACEHOLDER_DATE_VALUE,Portugal,"Actual Approval Date is 2023-12-31 (Dec 31 year-end) across all 4 extracts; suspicious for Reliance pathway placeholder"
+COUNTRY_NAME_WHITESPACE,Korea,Trailing whitespace in Tracker_2026_02 and 03; splits into separate entity when grouped
+DATE_STORED_AS_NUMBER,Expected Launch Shipment Date,Entire column in Tracker_2026_03 stored as Excel serial numbers instead of dates
+STATUS_VALUE_DRIFT,Finland,Launch Status varies (e.g. 'active ' 'ACTIVE' 'ACTIVE ') instead of standard 'Active'
+STATUS_INVALID_ENTRY,Ireland,Launch Status contains 'Invalid Entry' in Apr tracker
+DUPLICATE_ROW,Slovakia,VLR-4MG-1VIAL appears twice in Tracker_2026_03 with different ship dates
+SKU_NOT_IN_REFERENCE,Norway,VLR-16MG-4PEN appears in all 4 tracker months but is not in Ref_SKUs
+APPROVAL_TARGET_NOT_ACTUAL,Slovakia;Turkey;United States,Target approval dates passed with no actual approval recorded as of Apr 25
+APPROVAL_BEFORE_SUBMISSION,Mexico;Peru,National pathway but Actual Approval precedes Actual Submission; impossible for independent assessment
+SHIPMENT_BEFORE_APPROVAL,Czechia;Germany;Poland,MTS countries with expected ship dates before target approval; MTS has no bonded warehouse
+DEMAND_LOADED_TOO_LATE,Brazil;Germany;Poland,Demand loaded but site lead time pushes real earliest past claimed ship dates
+DEMAND_NEVER_LOADED,Finland;Norway,Direct route but demand never loaded; factory cannot start production
+BLANK_TREATED_AS_PASS,Finland;Norway,Direct route countries with readiness fields blank; dashboard treats silence as yes
+SETUP_DATE_AFTER_SHIPMENT,Croatia;Spain;Turkey,Plant Setup Date falls after Expected Launch Shipment Date for earliest SKUs
+FLAG_YES_BUT_NO_DATE,Malaysia;United States;Vietnam,Readiness flag=Yes but corresponding date field is blank for Direct-route markets
+DATE_MOVED_WITHOUT_RECORD,Japan;Korea,Ship dates move ~45 days every month across all 4 extracts with zero change log entries
+STARTING_DOSE_UNAVAILABLE,Slovakia;Turkey;United States,2MG (starting dose) ships 150-158 days after other doses; patients cannot begin titration
+ROLLUP_ANY_NOT_ALL,Slovakia;Turkey;United States,Dashboard shows GREEN because some SKUs have future ship dates but starting dose ships much later
+PLACEHOLDER_DATE_VALUE,Portugal,Actual Approval Date is 2023-12-31 (Dec 31 year-end) across all 4 extracts; suspicious placeholder

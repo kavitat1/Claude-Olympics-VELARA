@@ -1,31 +1,31 @@
 country,rank,slippage_days,impact_score,driver,evidence
-United States,1,158,505600000,STARTING_DOSE_UNAVAILABLE,"2MG ships 2027-04-04 but earliest other dose (12MG) ships 2026-10-28; 158-day gap; also no approval (target 2026-03-03 passed)"
-Germany,2,50,120000000,SHIPMENT_BEFORE_APPROVAL,"MTS country claims ship 2026-06-28 but target approval is 2026-08-17; demand loaded 2026-04-12 also too late (Ashford 16wk=Aug 02); binding=approval"
-Turkey,3,154,40040000,STARTING_DOSE_UNAVAILABLE,"2MG ships 2027-01-16 but earliest other dose (12MG) ships 2026-08-15; 154-day gap; also no approval (target 2026-03-20 passed) and plant setup after ship"
-Poland,4,90,27000000,SHIPMENT_BEFORE_APPROVAL,"MTS country claims ship 2026-08-20 but target approval is 2026-11-18; demand loaded 2026-04-09 too late (Calderon 26wk=Oct 08); binding=approval Nov 18"
-Brazil,5,18,16200000,DEMAND_LOADED_TOO_LATE,"Demand loaded 2026-04-10; Ashford needs 16wk (112d)=earliest 2026-07-31; claims 2026-07-13; 18-day deficit"
-Spain,6,30,12600000,SETUP_DATE_AFTER_SHIPMENT,"Plant setup date 2027-02-05 is after claimed 2MG ship date 2027-01-06; cannot produce until setup; 30-day gap"
-Czechia,7,85,8075000,SHIPMENT_BEFORE_APPROVAL,"MTS Via Hub country claims ship 2027-04-02 but target approval is 2027-06-26; 85-day gap; cannot ship before approval"
-Slovakia,8,150,6000000,STARTING_DOSE_UNAVAILABLE,"2MG ships 2027-04-30 but earliest other dose (12MG) ships 2026-12-01; 150-day gap; also no approval (target 2026-03-12 passed)"
-Norway,9,109,5232000,DEMAND_NEVER_LOADED,"Direct route but demand never loaded; Calderon needs 26wk (182d); if loaded today (2026-04-25) earliest=2026-10-24; claims 2026-07-07; 109-day gap"
-Finland,10,85,4675000,DEMAND_NEVER_LOADED,"Direct route but demand never loaded; Calderon needs 26wk (182d); if loaded today earliest=2026-10-24; claims 2026-07-31; 85-day gap"
-Croatia,11,19,665000,SETUP_DATE_AFTER_SHIPMENT,"Plant setup date 2027-02-10 is after claimed 2MG ship date 2027-01-22; 19-day gap"
-China,12,0,0,NONE,"MTO; approved 2024-12-26; all SKUs shipped 2024-08-10 to bonded warehouse; no issues found"
-Japan,13,0,0,NONE,"Dates drift ~45d/month with no change log but current Apr claim (2027-05-23) is achievable from demand+lead time"
-Canada,14,0,0,NONE,"MTO; approved 2024-11-22; all SKUs shipped 2024-08-01; no issues found"
-Italy,15,0,0,NONE,"MTO; approved 2024-07-05; all SKUs shipped 2024-02-19; no issues found"
-Mexico,16,0,0,NONE,"Approved (date anomaly: approval before submission for National pathway but ship date achievable regardless)"
-Korea,17,0,0,NONE,"Dates drift ~45d/month with no change log but current claim (2026-12-31) is achievable from demand+lead time"
-Vietnam,18,0,0,NONE,"Demand loaded 2026-04-17; Brenner 24wk=Oct 02; ship Oct 24 is after; target approval Sep 20 < Oct 24; OK"
-Malaysia,19,0,0,NONE,"Demand loaded 2026-04-22; Brenner 24wk=Oct 07; ship Dec 29 is after; target approval Oct 31 < Dec 29; OK"
-Greece,20,0,0,NONE,"MTO; approved 2023-12-03; all SKUs shipped 2024-02-01; secondary site role but already launched"
-Portugal,21,0,0,NONE,"MTO; shipped 2024-02-29; approval date 2023-12-31 may be placeholder but product already in warehouse"
-Chile,22,0,0,NONE,"MTO; approved 2024-10-10; all SKUs shipped 2024-03-25; no issues found"
-Colombia,23,0,0,NONE,"Demand loaded 2026-04-22; Ashford 16wk=Aug 12; ship Jan 03 2027 is after; target approval Nov 24 < Jan 03; OK"
-Ireland,24,0,0,NONE,"MTO; approved 2024-12-24; all SKUs shipped 2024-07-29; Invalid Entry on 2MG row is data quality issue only"
-Romania,25,0,0,NONE,"MTO; approved 2024-04-05; all SKUs shipped 2023-10-09; no issues found"
-Hungary,26,0,0,NONE,"MTO; approved 2024-10-07; all SKUs shipped 2024-03-16; no issues found"
-Estonia,27,0,0,NONE,"Via Hub; blanks legitimate; ship Feb 2027 > target approval Aug 2026; no demand constraint"
-Denmark,28,0,0,NONE,"MTO; approved 2025-02-13; all SKUs shipped 2024-09-17; no issues found"
-Peru,29,0,0,NONE,"Approved (date anomaly: approval before submission for National but ship date achievable regardless)"
-Bulgaria,30,0,0,NONE,"MTO; approved 2024-03-27; all SKUs shipped 2023-09-17; secondary site but already launched"
+United States,1,158,505600000,STARTING_DOSE_UNAVAILABLE,2MG ships 2027-04-04; 158d after earliest other dose
+Germany,2,50,120000000,SHIPMENT_BEFORE_APPROVAL,MTS ship 2026-06-28 before target approval 2026-08-17; demand loaded 2026-04-12; lead 112d; earliest=2026-08-02
+Turkey,3,154,40040000,STARTING_DOSE_UNAVAILABLE,2MG ships 2027-01-16; 154d after earliest other dose
+Poland,4,90,27000000,SHIPMENT_BEFORE_APPROVAL,MTS ship 2026-08-20 before target approval 2026-11-18; demand loaded 2026-04-09; lead 182d; earliest=2026-10-08
+Brazil,5,18,16200000,DEMAND_LOADED_TOO_LATE,demand loaded 2026-04-10; lead 112d; earliest=2026-07-31
+Spain,6,30,12600000,SETUP_DATE_AFTER_SHIPMENT,plant setup 2027-02-05 after ship 2027-01-06
+Czechia,7,85,8075000,SHIPMENT_BEFORE_APPROVAL,MTS ship 2027-04-02 before target approval 2027-06-26
+Slovakia,8,150,6000000,STARTING_DOSE_UNAVAILABLE,2MG ships 2027-04-30; 150d after earliest other dose
+Norway,9,109,5232000,DEMAND_NEVER_LOADED,demand not loaded; if loaded today earliest=2026-10-24
+Finland,10,85,4675000,DEMAND_NEVER_LOADED,demand not loaded; if loaded today earliest=2026-10-24
+Croatia,11,19,665000,SETUP_DATE_AFTER_SHIPMENT,plant setup 2027-02-10 after ship 2027-01-22
+Bulgaria,12,0,0,NONE,all shipped and approved
+Canada,13,0,0,NONE,all shipped and approved
+Chile,14,0,0,NONE,all shipped and approved
+China,15,0,0,NONE,all shipped and approved
+Colombia,16,0,0,NONE,no problem found
+Denmark,17,0,0,NONE,all shipped and approved
+Estonia,18,0,0,NONE,no problem found
+Greece,19,0,0,NONE,all shipped and approved
+Hungary,20,0,0,NONE,all shipped and approved
+Ireland,21,0,0,NONE,all shipped and approved
+Italy,22,0,0,NONE,all shipped and approved
+Japan,23,0,0,NONE,no problem found
+Korea,24,0,0,NONE,no problem found
+Malaysia,25,0,0,NONE,no problem found
+Mexico,26,0,0,NONE,no problem found
+Peru,27,0,0,NONE,no problem found
+Portugal,28,0,0,NONE,all shipped and approved
+Romania,29,0,0,NONE,all shipped and approved
+Vietnam,30,0,0,NONE,no problem found

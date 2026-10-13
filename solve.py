@@ -16,6 +16,7 @@ Usage:
     data_dir defaults to ./dataset
 """
 
+import json
 import os
 import sys
 import csv
@@ -504,12 +505,33 @@ def analyze(data_dir):
         for code, where, proof in findings:
             w.writerow([code, where, proof])
 
-    print(f"Generated submission_template/risk_ranking.csv ({len(ranked)} countries)")
-    print(f"Generated submission_template/findings.csv ({len(findings)} findings)")
-    print(f"\nTop 11 at-risk countries:")
-    for rank, (country, (slip, impact, driver, _)) in enumerate(ranked[:11], 1):
-        if slip > 0:
-            print(f"  {rank}. {country}: {slip}d slippage, impact={impact:,}, driver={driver}")
+    # Build JSON output — the ONLY thing printed to stdout
+    risk_ranking = []
+    for rank, (country, (slip, impact, driver, ev)) in enumerate(ranked, 1):
+        risk_ranking.append({
+            "country": country,
+            "rank": rank,
+            "slippage_days": slip,
+            "impact_score": impact,
+            "driver": driver,
+            "evidence": ev,
+        })
+
+    findings_out = []
+    for code, where, proof in findings:
+        findings_out.append({
+            "what": code,
+            "where": where,
+            "proof": proof,
+        })
+
+    output = {
+        "risk_ranking": risk_ranking,
+        "findings": findings_out,
+    }
+
+    # Print ONLY JSON to stdout — nothing else
+    print(json.dumps(output))
 
 
 if __name__ == "__main__":
